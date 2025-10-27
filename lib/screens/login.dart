@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tp7_isetn/screens/dashboard_screen.dart';
 import 'package:tp7_isetn/screens/register.dart';
 import '../services/auth_service.dart';
 import '../models/user.dart';
@@ -116,18 +117,6 @@ class _LoginState extends State<Login> {
           ),
         ),
       ),
-    );
-  }
-}
-
-// Classe DashboardScreen factice pour la navigation
-class DashboardScreen extends StatelessWidget {
-  const DashboardScreen({super.key});
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(title: const Text("Tableau de Bord")),
-      body: const Center(child: Text("Connexion Réussie !")),
     );
   }
 }
